@@ -9,10 +9,16 @@
  */
 
 function birthday(s, d, m) {
-  // Write your code here
-  let result = 0;
+  let result = [];
   for (let i=0; i<s.length; i++) {
-      if (s.slice(i,m).reduce((a,b) => a+b)===d)result++
+     result.push(s.slice(i, i+m));
   }
-  return result;
+ 
+  return result.filter(a=>a.length===m).map(a=>a.reduce((b,c)=>b+c)).filter(a=>a===d).length;
 }
+
+const chocoArray = [1,1,1,1,1,1];
+const day = 3;
+const month = 2;
+
+console.log(birthday(chocoArray, day, month));
