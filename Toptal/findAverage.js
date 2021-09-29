@@ -1,0 +1,1 @@
+return Math.ceil(x.reduce((a,b)=>a+b)/x.length)
