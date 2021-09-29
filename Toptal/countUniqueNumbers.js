@@ -1,0 +1,1 @@
+return Array.from(new Set(x)).length
