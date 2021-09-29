@@ -1,7 +1,3 @@
-function romanToInt(x) {
-  // x is a string; roman numeral
-  // return a number
-  // (ex. x="IV", you should return 4)
   var myMap = new Map();
   myMap.set('I', 1);
   myMap.set('V', 5);
@@ -23,6 +19,3 @@ for (const char of x.split("").reverse()) {
   previous = current;
 }
 return result;
-}
-
-console.log(romanToInt("IV"));
