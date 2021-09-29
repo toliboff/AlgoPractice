@@ -1,14 +1,16 @@
+// module.exports = 
 function twoArrayAvg(x,y){
-  return x.reduce((a,b)=>a+b)/x.length + y.reduce((a,b)=>a+b)/y.length
+  let arr = x.concat(y);
+  return (arr.reduce((a,b)=>a+b)/arr.length);
 }
 
-console.log(twoArrayAvg( [1,2,3,6],[3,2,5,5,10] ) );
+// console.log(twoArrayAvg(  [38,17,67,28,99,1,64],[90,15]  ));
 
 // twoArrayAvg( [1,2,3,6],[3,2,5,5,10] ) = 8expected: 4
 
 // twoArrayAvg( [1],[9] ) = 10expected: 5
 
-// twoArrayAvg( [1,2,6],[11] ) = 14expected: 7
+// twoArrayAvg( [1,2,6],[11] ) = 14expected: 7 ----------------
 
 // twoArrayAvg( [6,4,0,6],[3,5,10] ) = 10expected: 5
 
