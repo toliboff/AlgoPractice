@@ -1,0 +1,1 @@
+return x.split(' ').map(a=>a.split('').reverse().join('')).reverse().join(' ')
