@@ -1,4 +1,9 @@
-x=Math.abs(x)
+box.numberOfCircles = function numberOfCircles(x) {
+  // x is a number
+  // return a number
+  // (ex. x=1908, you should return 4)
+  // (ex. x=9 you should return 1)
+  x=Math.abs(x)
   circles={
     0:1,
     1:0,
@@ -12,3 +17,4 @@ x=Math.abs(x)
     9:1,
   }
   return String(x).split('').map(n=>circles[n]).reduce((a,b)=>a+b)
+};

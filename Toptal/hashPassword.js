@@ -1,4 +1,8 @@
-    splitted = password.split``.map(char=>changeLetters(char, x))
+box.hashPassword = function hashPassword(password, x) {
+  // password is a string, x is a number
+  // return a string
+  // (ex. password = 'ab1By', x = 3 so you should return "DE4eB")
+   splitted = password.split``.map(char=>changeLetters(char, x))
 
     function changeLetters(letter, step){
       let code=letter.charCodeAt();
@@ -44,3 +48,6 @@
     }
 
     return splitted.join``
+
+};
+   
