@@ -1,8 +1,14 @@
+// Challenge
 box.hashPassword = function hashPassword(password, x) {
   // password is a string, x is a number
   // return a string
   // (ex. password = 'ab1By', x = 3 so you should return "DE4eB")
-   splitted = password.split``.map(char=>changeLetters(char, x))
+  
+};
+
+// SOLUTION:
+function hashPassword(password, x) {
+    splitted = password.split``.map(char=>changeLetters(char, x))
 
     function changeLetters(letter, step){
       let code=letter.charCodeAt();
@@ -13,8 +19,7 @@ box.hashPassword = function hashPassword(password, x) {
         code=letter.toLowerCase().charCodeAt()
       }
 
-
-      if(code>96 && code<123){
+        if(code>96 && code<123){
         if (step>52){
           step=step%26;
         }
@@ -46,8 +51,5 @@ box.hashPassword = function hashPassword(password, x) {
       }
       
     }
-
     return splitted.join``
-
-};
-   
+    };
