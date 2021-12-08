@@ -9,5 +9,10 @@
  */
 
 function divisibleSumPairs(n, k, ar) {
+  let result = 0;
   
+  for (let i=0; i<n; i++){
+      result+=ar.slice(i+1).filter(num=>(num+ar[i])%k==0).length;
+  }
+  return result;
 }
