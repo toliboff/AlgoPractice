@@ -14,6 +14,10 @@
 // Output: true
 
 function isValid(){
- 
+  return (str.length>3 && str.length<26) 
+          && str.replace(/[^a-z0-9_]/gi, '').length==str.length 
+          && str[0].replace(/[^a-z]/gi,' ')!=' '
+          && str[str.length-1]!=='_';
 }
 
+console.log(isValid('u__hello_world123'));
